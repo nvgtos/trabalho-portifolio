@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,500&display=swap');
+
+/* configuração geral do html */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1A1A1D;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+}
+
+body{
+    font-size: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* estilização do header do site */
+#cabecalho{
+    border-bottom: 0.4px solid #3B1C32;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.menu_item{
+    color: #d6649d;
+    font-size: 21px;
+    padding: 15px;
+}
+
+.menu_item:hover{
+    background-color: #cc6096;
+    color: #3B1C32;
+    transition: .3s;
+}
+
+/* estilização do conteudo do site */
+#conteudo{
+    margin: 0 auto;
+    border-top: 1px solid #3B1C32;
+    max-width: 900px;
+    padding-bottom: 50px;
+}
+
+.conteudo_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 21px;
+    color: #ECDBBA;
+    margin: 0;
+}
+
+.conteudo_principal h1{
+    display: flex;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-weight: 1;
+    color: #cc6096;
+    margin: 5px;
+}
+
+.conteudo_principal h2{
+    display: block;
+    font-size: 0.8em;
+    font-weight: 1;
+    color: #883f63;
+    margin: 9px;
+}
+
+.conteudo_principal p{
+    text-align: center;
+}
+
+
+/* estilização da parte de formacao academica */
+.formacao h2{
+    display: flex;
+    justify-content: center;
+    font-weight: 1;
+    font-size: 2em;
+    color: #cc6096;
+}
+.formacao {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #7e0f5e;
+    border-radius: 3px;
+    box-shadow: 15px 20px 4px #11050e;
+    color:#ECDBBA;
+    padding: 1em;
+}
+
+.box_formacao_itens{
+    color:#ECDBBA;
+}
+
+
+/* estilizacao da parte de projetos */
+.projetos h2{
+    display: flex;
+    justify-content: center;
+    font-weight: 1;
+    font-size: 2em;
+    color: #cc6096;
+}
+
+.projetos {
+    border-radius: 3px;
+    border: 5px solid #7e0f5e;
+    box-shadow: 15px 20px 4px #11050e;
+    color:#ECDBBA;
+    padding: 1em;
+    margin-top: 8em;
+}
+
+.caixa_projeto{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caixa_projeto .cards{
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    border: #8d3e75 solid 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+    text-align: center;
+}
+
+.caixa_projeto .cards:hover{
+    box-shadow: 15px 20px 4px #11050e;
+    transition: .1s;
+    transform: translateY(2px);
+}
+
+.caixa_projeto .cards .conteudo{
+    padding: 20px;
+}
+
+.caixa_projeto .cards .conteudo a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#A64D79;
+    color:#3B1C32;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+/* estilizacao do formulario para contato */
+.contato h2{
+    display: flex;
+    justify-content: center;
+    font-weight: 1;
+    font-size: 2em;
+    color: #cc6096;
+}
+
+.contato {
+    border: 5px solid #7e0f5e;
+    box-shadow: 15px 20px 4px #11050e;
+    border-radius: 3px;
+    color:#ECDBBA;
+    padding: 1em;
+    margin-top: 8em;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column; 
+}
+
+.campo_formulario {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    font-size: 20px;
+}
+
+.campo {
+    padding: 20px;
+}
+
+input, textarea {
+    border-radius: 10px;
+    border: #1f0e1a solid 3px;
+    background-color: #3B1C32;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color:#ECDBBA;
+}
+
+input::placeholder {
+    color: #d6649d;
+}
+
+textarea::placeholder {
+    color: #d6649d;
+}
+
+textarea {
+    resize: none;
+    height: 10em;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: #1f0e1a solid 3px;
+    background-color: #3B1C32;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #d6649d;
+}
+
+/* estilizacao do rodape */
+
+#rodape{
+    display: flex;
+    justify-content: center;
+    border-top: 0.4px solid #3B1C32;
+    color: #ECDBBA;
+    padding: 10px;
+}

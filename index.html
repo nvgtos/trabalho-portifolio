@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio</title>
+</head>
+<body>
+    
+    <!-- barra de navegacao do site -->
+    <header id="cabecalho">
+        <nav class="navegacao">
+            <a href="#conteudo" class="menu_item">&lt;Sobre mim&gt;</a>
+            <a href="#formacao" class="menu_item">&lt;Formação&gt;</a>
+            <a href="#projetos" class="menu_item">&lt;Projetos&gt;</a>
+            <a href="#contato" class="menu_item">&lt;Contato&gt;</a>
+        </nav>
+    </header>
+    
+    <!-- conteudo principal do site -->
+    <main id="conteudo">
+        <section class="conteudo_principal">
+            <p>Olá, meu nome é</p>
+            <h1 class="titulo_nome">Leandro Guedes Pereira</h1>
+            <h2 class="subtitulo">&lt;Desenvolvedor front-end&gt;</h2>
+            <p>Sou estudante de análise e desenvolvimento de sistemas pela UNINTER e apaixonado por desenvolvimento web. Atualmente meu objeto é me especializar cada vez mais como um desenvolvedor front-end. <br> <br> Fora da programação, passo a maior parte do meu tempo livre jogando ou aprendendo mais sobre design gráfico.
+            </p>
+        </section>
+    
+    <!-- formacao academica -->
+        <section class="formacao" id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <div class="box_formacao_itens">
+                <h3>Ensino médio </h3>
+                <p><em>Completo</em></p> <br>
+
+                <h3>Centro Universitário Internacional UNINTER - Tecnólogo em analise e Desenvolvimento de sistemas</h3>
+                <p><em>2025 - 2027 (Cursando)</em></p><br>
+
+                <h3>Idiomas</h3>
+                <p>Português - Nativo</p>
+                <p>Inglês - Intermediário</p>
+            </div>
+        </section>
+
+    <!-- caixa com projetos -->
+        <section class="projetos" id="projetos">
+            <h2>Projetos</h2>
+            <!-- projeto1 -->
+            <div class="caixa_projeto">
+                <div class="cards">
+                    <h3>Livraria</h3>
+                    <div class="conteudo">
+                        <p> Gerenciador de livros feito em Python.</p>
+                        <a href="https://github.com/nvgtos/gerenciador-de-livros" target="_blank">Veja mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- projeto2 -->
+            <div class="caixa_projeto">
+                <div class="cards">
+                    <h3>App de Vendas</h3>
+                    <div class="conteudo">
+                        <p>
+                            Loja de venda de açai e cupuaçu com interface feito em Python.
+                        </p>
+                        <a href="https://github.com/nvgtos/loja-acai-cupuacu" target="_blank">Veja mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- caixa com formulario para contato -->
+        <section class="contato" id="contato">
+            <h2>Fale comigo</h2>
+            <!-- formulario contato -->
+            <form class="formulario">
+                <fieldset class="campo_formulario">
+                    <div class="campo">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="campo">
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+
+                    <div class="botao">
+                        <button type="submit">Enviar mensagem</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        
+    </main>
+    <!-- rodape -->
+    <footer id="rodape">
+        <p>&copy; 2025 todos os direitos reservados - Leandro Guedes Pereira</p>
+    </footer>
+</body>
+</html>
